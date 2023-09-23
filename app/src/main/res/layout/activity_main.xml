@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C8B0B0"
+        tools:context=".MainActivity">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImgId"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/linTakenPhoto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:src="@drawable/ic_camera"
+            app:layout_constraintBottom_toBottomOf="@+id/profileImgId"
+            app:layout_constraintEnd_toEndOf="@+id/profileImgId"
+            app:layout_constraintStart_toEndOf="@+id/profileImgId"
+            app:layout_constraintTop_toTopOf="@+id/profileImgId" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnProfileId"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:backgroundTint="#CE452C81"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileImgId" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
